@@ -3,11 +3,8 @@
 ## Topic
 This project investigates whether airline safety improved after the year 2000 compared to the period before 2000.
 
-## Data Source
-GitHub Link: https://github.com/fivethirtyeight/data/tree/master/airline-safety
-
-FiveThirtyEight Airline Safety Dataset:
-https://raw.githubusercontent.com/fivethirtyeight/data/master/airline-safety/airline-safety.csv
+## Goal
+The goal is to use statistical methods such as permutation testing and bootstrapping to evaluate whether airline safety has improved over time.
 
 ## Status
 Project setup in progress.
