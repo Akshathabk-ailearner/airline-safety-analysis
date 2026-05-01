@@ -37,3 +37,25 @@ I will use bootstrap resampling to estimate uncertainty in the median difference
 
 ### Null Hypothesis  
 There is no difference in the mean number of airline incidents between the periods before and after 2000.
+
+
+
+## Final Analysis Summary
+
+### What question did you ask?
+I investigated whether airline safety improved after the year 2000 by comparing airline incident data before and after 2000.
+
+### What data did you use?
+I used the FiveThirtyEight airline safety dataset, where each row represents an airline. The dataset includes the number of incidents and fatalities for two time periods: 1985–1999 and 2000–2014.
+
+### What patterns or relationships did you find?
+The data shows that airline incidents decreased after 2000. The average number of incidents dropped from about 7.18 before 2000 to about 4.13 after 2000. Visualizations also show reduced variability and fewer extreme cases in the later period.
+
+### How certain are you about those results?
+Using a permutation test, I found a p-value of 0.0182, which provides statistical evidence that the decrease in incidents is unlikely due to chance.
+
+However, a bootstrap confidence interval for the median difference ranged from approximately -1.0 to 4.0, which includes zero. This indicates some uncertainty when using the median, although the overall trend still suggests improvement.
+
+### What would you recommend or conclude?
+Overall, the analysis suggests that airline safety improved after 2000. While the permutation test shows strong evidence of a decrease in incidents, the bootstrap analysis highlights some variability across airlines. This demonstrates the importance of using multiple statistical methods to fully understand real-world data.
+
