@@ -38,14 +38,11 @@ I used the FiveThirtyEight airline safety dataset, where each row represents an 
 The data shows that airline incidents decreased after 2000. The average number of incidents dropped from about 7.18 before 2000 to about 4.13 after 2000. Visualizations also show reduced variability and fewer extreme cases in the later period.
 
 ### How certain are you about those results?
-Using a permutation test, I found a p-value of 0.0206 (2.06%), meaning we would observe a difference this large or larger only about 2.06% of the time due to random chance. This provides statistical evidence that the decrease in incidents is unlikely due to random chance.
 
-However, a bootstrap confidence interval for the median difference ranged from approximately -1.0 to 4.0, which includes zero. This indicates some uncertainty when using the median.
+Using a permutation test, I found a p-value of 0.0206 (2.06%), meaning we would observe a difference this large or larger only about 2.06% of the time due to random chance. This provides statistical evidence that the decrease in incidents is unlikely to be explained by random chance alone.
 
-This is because the Central Limit Theorem applies to means, but not directly to medians, especially with skewed data.
-
-However, a bootstrap confidence interval for the median difference ranged from approximately -1.0 to 4.0, which includes zero. This indicates some uncertainty when using the median, although the overall trend still suggests improvement.
+However, a bootstrap confidence interval for the median difference ranged from approximately -1.0 to 4.0, which includes zero. This indicates some uncertainty when using the median. This is because the Central Limit Theorem applies to means, but not directly to medians, especially with skewed data.
 
 ### What would you recommend or conclude?
-Overall, the analysis suggests that airline safety improved after 2000. While the permutation test shows strong evidence of a decrease in incidents, the bootstrap analysis highlights some variability across airlines. This demonstrates the importance of using multiple statistical methods to fully understand real-world data.
+Overall, the analysis provides statistical evidence that airline safety improved after 2000. While the permutation test shows strong evidence of a decrease in incidents, the bootstrap analysis highlights some variability across airlines. This demonstrates the importance of using multiple statistical methods to fully understand real-world data.
 
