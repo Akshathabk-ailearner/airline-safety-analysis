@@ -5,3 +5,4 @@ This folder contains visualizations generated during analysis:
 - Boxplot
 - Permutation distribution
 - Bootstrap distribution
+- Average airline incident
