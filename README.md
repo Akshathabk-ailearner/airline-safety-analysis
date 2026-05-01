@@ -7,12 +7,11 @@ This project investigates whether airline safety improved after the year 2000 co
 The goal is to use statistical methods such as permutation testing and bootstrapping to evaluate whether airline safety has improved over time.
 
 ## Status
-Project setup in progress.
+Completed. Analysis, visualization, permutation testing, and bootstrap uncertainty estimation have been finalized.
 
 
 ## Project Scaffold Table
 
-## Project Scaffold Table
 
 | Element | Your Plan |
 |--------|---------|
@@ -39,7 +38,11 @@ I used the FiveThirtyEight airline safety dataset, where each row represents an 
 The data shows that airline incidents decreased after 2000. The average number of incidents dropped from about 7.18 before 2000 to about 4.13 after 2000. Visualizations also show reduced variability and fewer extreme cases in the later period.
 
 ### How certain are you about those results?
-Using a permutation test, I found a p-value of 0.0182, which provides statistical evidence that the decrease in incidents is unlikely due to chance.
+Using a permutation test, I found a p-value of 0.0206 (2.06%), meaning we would observe a difference this large or larger only about 2.06% of the time due to random chance. This provides statistical evidence that the decrease in incidents is unlikely due to random chance.
+
+However, a bootstrap confidence interval for the median difference ranged from approximately -1.0 to 4.0, which includes zero. This indicates some uncertainty when using the median.
+
+This is because the Central Limit Theorem applies to means, but not directly to medians, especially with skewed data.
 
 However, a bootstrap confidence interval for the median difference ranged from approximately -1.0 to 4.0, which includes zero. This indicates some uncertainty when using the median, although the overall trend still suggests improvement.
 
